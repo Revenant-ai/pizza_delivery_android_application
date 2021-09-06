@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pizza.time">
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PizzaTime"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".past_orders"></activity>
+        <activity android:name=".User_profile" />
+        <activity android:name=".mainScreen.Order_Track" />
+        <activity android:name=".mainScreen.pizza_customize" />
+        <activity android:name=".Admin.Dashboard" />
+        <activity android:name=".mainScreen.checkout_page" />
+        <activity android:name=".mainScreen.Product_Cart" />
+        <activity android:name=".mainScreen.Menu" />
+        <activity android:name=".signUp.user_registration" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.PizzaTime">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mainScreen.dashboard" />
+        <activity android:name=".signUp.otp" />
+        <activity android:name=".signUp.Login" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

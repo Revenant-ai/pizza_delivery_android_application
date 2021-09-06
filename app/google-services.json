@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "733598776196",
+    "project_id": "pizza-time-b7256",
+    "storage_bucket": "pizza-time-b7256.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733598776196:android:96be9039a0e648d6ccfbd1",
+        "android_client_info": {
+          "package_name": "pizza.time"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733598776196-nahg63ggp060t32sqfmoot12hlhdsa6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pizza.time",
+            "certificate_hash": "64d3dfca60f9acc52c01365d57d8b17a6c005bdc"
+          }
+        },
+        {
+          "client_id": "733598776196-a7u97eu59qo1a7phch5bfdnvs37j4nn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmiljLXzqhnydECTJqXS5zVQC6BBJIfCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733598776196-a7u97eu59qo1a7phch5bfdnvs37j4nn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

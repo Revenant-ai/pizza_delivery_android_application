@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainScreen.Order_Track">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_appbar"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Tracking"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topAppBar" />
+
+    <TextView
+        android:id="@+id/header_no_track"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N order placed"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/topAppBar"
+        app:layout_constraintStart_toStartOf="@+id/topAppBar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/explore_menu_btn_track_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore Menu"
+        app:layout_constraintEnd_toEndOf="@+id/topAppBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_no_track"
+        android:backgroundTint="@color/yellow"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/track_vert_1"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/track_logo1"
+        app:layout_constraintStart_toStartOf="@+id/track_logo1"
+        app:layout_constraintTop_toBottomOf="@+id/track_logo1"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/track_logo1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_baseline_done_all_24"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tracl_text_1"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Order Receieved"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/track_vert_1"
+        app:layout_constraintStart_toEndOf="@+id/track_logo1"
+        app:layout_constraintTop_toTopOf="@+id/track_logo1"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/track_logo_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_fastfood_24"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/track_logo1"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="@+id/track_logo1"
+        app:layout_constraintTop_toBottomOf="@+id/track_vert_1"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tracl_text_2"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Order in Kitchen"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/track_logo_2"
+        app:layout_constraintStart_toEndOf="@+id/track_logo1"
+        app:layout_constraintTop_toBottomOf="@+id/track_vert_1"
+        app:layout_constraintVertical_bias="0.61"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/track_vert_2"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/track_logo_2"
+        app:layout_constraintStart_toStartOf="@+id/track_logo_2"
+        app:layout_constraintTop_toBottomOf="@+id/track_logo_2"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/track_logo3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_order_confirmation"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/track_logo_2"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="@+id/track_logo_2"
+        app:layout_constraintTop_toBottomOf="@+id/track_vert_2"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:id="@+id/tracl_text_3"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Order being Packed"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/track_logo3"
+        app:layout_constraintStart_toEndOf="@+id/track_logo1"
+        app:layout_constraintTop_toBottomOf="@+id/track_vert_2"
+        app:layout_constraintVertical_bias="0.61"
+        android:visibility="invisible"/>
+
+
+    <View
+        android:id="@+id/track_vert_3"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/track_logo3"
+        app:layout_constraintStart_toStartOf="@+id/track_logo3"
+        app:layout_constraintTop_toBottomOf="@+id/track_logo3"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/track_logo4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_directions_bike_24"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/track_logo3"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="@+id/track_logo3"
+        app:layout_constraintTop_toBottomOf="@+id/track_vert_3"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tracl_text_4"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Order out for delivery"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/track_logo4"
+        app:layout_constraintStart_toEndOf="@+id/track_logo1"
+        app:layout_constraintTop_toBottomOf="@+id/track_vert_3"
+        app:layout_constraintVertical_bias="0.61"
+        android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
